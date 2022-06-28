@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotale</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="header-top__item header-top__left">
+                            <a href="tel:(024) 2242 0777"><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a>
+                            <a href="mailto:infor@webhotel.com"><i class="fa-solid fa-envelope"></i> infor@webhotel.com</a>
+                        </div>
+                        <div class="header-top__item header-top__right">
+                            <span class="user-login">
+                                login
+                            </span>
+                            <span class="user-signup">
+                                sign up
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header-content">
+                        <a href="./index.html" class="logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="menu-link">home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        pages<i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="./about.html" class="submenu-item__link">
+                                                about us
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="./gallery.html" class="submenu-item__link">
+                                                gallery
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./rooms.html" class="menu-link">rooms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./reservation.html" class="menu-link">reservation</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./blogs.html" class="menu-link">blogs</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./contact.html" class="menu-link">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="link-asset">
+                            <a href="" class="btn book-link">
+                                book now
+                            </a>
+                            <div id="header">
+                                <a href="#menu" id="menu-toggle" class="">
+                                    <span>
+                                        <!-- <i class="fa-solid fa-bars"></i> -->
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-title">
+                            <h1 class="banner-title">
+                                room details
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="room-details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="room-content">
+                                <div class="room-thumd">
+                                    <figure class="image">
+                                        <img src="./images/room-detail.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="room-name">
+                                    <div class="inner">
+                                        <h3 class="room-title">Luxury Suite</h3>
+                                        <div class="room-caption">
+                                            Room Features
+                                        </div>
+                                        <div class="room-price">
+                                            <div class="price-head">
+                                                <span class="price-form">
+                                                    form
+                                                </span>
+                                                <span class="price-value">
+                                                    $90.0
+                                                </span>
+                                            </div>
+                                            <div class="price-tail">
+                                                per night
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="room-service">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h3>Bed</h3>
+                                                    <span>1 King Bed</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-users-line"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h3>max guest</h3>
+                                                    <span>4 guest</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-maximize"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h3>room space</h3>
+                                                    <span>38 sqm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-tree"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h3>room view</h3>
+                                                    <span>city view</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="room-desc">
+                                    <p>
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by
+                                        their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts
+                                        it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    </p>
+                                    <p>
+                                        The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the
+                                        way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown
+                                    </p>
+                                </div>
+                                <div class="room-amenities">
+                                    <h3 class="title">
+                                        room amenities
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-tv"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        tv
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        wifi
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-vault"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        safe
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-shower"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        none smoking
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        phone
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="room-amenities">
+                                    <h3 class="title">
+                                        hotel amenities
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-tv"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        tv
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        wifi
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-vault"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        safe
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-shower"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        none smoking
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="inner">
+                                                <div class="icon">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                                <div class="icon-wrap">
+                                                    <h3>
+                                                        phone
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="room-rules">
+                                    <h3>
+                                        hotel rules
+                                    </h3>
+                                    <ul class="list-rules">
+                                        <li>
+                                            Smoking not allowed
+                                        </li>
+                                        <li>
+                                            Pets not allowed
+                                        </li>
+                                        <li>
+                                            Swimming pool closed from 8.00pm - 6.00am
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="sidebar">
+                                <div class="booking-bar">
+                                    <div class="list-tab">
+                                        <span id="booking-tab1" class="booking-tab active">
+                                            book your room
+                                        </span>
+                                        <span id="booking-tab2" class="booking-tab">
+                                            enquiry
+                                        </span>
+                                    </div>
+                                    <div class="booking-tab__content">
+                                        <div class="booking-content booking-content1 active">
+                                            <div class="form-search__room">
+                                                <form action="" class="search-room">
+                                                    <div class="form-group checkin-form">
+                                                        <label for="">check in</label>
+                                                        <div class="value-space">
+                                                            <input type="text" id="date1" class="form-control" value="22-12-2022">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group checkout-form">
+                                                        <label for="">check out</label>
+                                                        <div class="value-space">
+                                                            <input type="text" id="date2" class="form-control" value="22-12-2022">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group room-form">
+                                                        <div class="div">
+                                                            <label for="">room</label>
+                                                            <div class="value-space">
+                                                                <span class="amount">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-selection__wrap">
+                                                            <div class="custom-selection__wrap_item" id="custom-room">
+                                                                <div class="selection-head">Room</div>
+                                                                <div class="selection-tail">
+                                                                    <span class="minus">
+                                                                        <i class="fa-solid fa-minus"></i>
+                                                                    </span>
+                                                                    <span class="amount">1</span>
+                                                                    <span class="plus">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group guests-form">
+                                                        <div class="div">
+                                                            <label for="">guests</label>
+                                                            <div class="value-space">
+                                                                <span>
+                                                                    Adults 
+                                                                    <span class="amount2">1</span>
+                                                                </span>
+                                                                <span>
+                                                                    Children 
+                                                                    <span class="amount3">0</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-selection__wrap">
+                                                            <div class="custom-selection__wrap_item" id="custom-adult">
+                                                                <div class="selection-head">Adults</div>
+                                                                <div class="selection-tail">
+                                                                    <span class="minus2">
+                                                                        <i class="fa-solid fa-minus"></i>
+                                                                    </span>
+                                                                    <span class="amount2">1</span>
+                                                                    <span class="plus2">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="custom-selection__wrap_item" id="custom-children">
+                                                                <div class="selection-head">Children</div>
+                                                                <div class="selection-tail">
+                                                                    <span class="minus3">
+                                                                        <i class="fa-solid fa-minus"></i>
+                                                                    </span>
+                                                                    <span class="amount3">0</span>
+                                                                    <span class="plus3">
+                                                                        <i class="fa-solid fa-plus"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group btn-form">
+                                                        <button type="submit" class="btn-search1">
+                                                            search rooms
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content booking-content2">
+                                            <form action="" class="form-submid__enquiry">
+                                                <div class="form-group">
+                                                    <label for="">full name*</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">email address*</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">your enquiry*</label>
+                                                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                </div>
+                                                <div class="check-agree">
+                                                    <input type="checkbox" name="" id="" class="check-box">
+                                                    <label for="">
+                                                        * I agree with Terms of Service and Privacy Statement.
+                                                    </label>
+                                                </div>
+                                                <div class="form-btn">
+                                                    <a href="" class="submid-enquiry">
+                                                        submid enquiry
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery-horizontal">
+                <ul class="gallery-horizontal-list owl-carousel owl-theme">
+                    <li>
+                        <a href="./images/gll-ho3.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho4.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho4.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho5.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho5.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho6.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho6.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho7.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho7.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho8.jpg" data-fancybox="group">
+                            <img src="./images/gll-ho8.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/gll-ho9.jpg" data-fancybox="gallery">
+                            <img src="./images/gll-ho9.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="more-room">
+                <div class="container">
+                    <div class="section-title">
+                        <h3 class="subtitle">
+                            more rooms
+                        </h3>
+                    </div>
+                    <div class="rooms-slider owl-carousel owl-theme">
+                        <div class="rooms-item">
+                            <div class="inner">
+                                <figure class="image">
+                                    <a href="./room-details.html">
+                                        <img src="./images/room1.jpg" alt="">
+                                    </a>
+                                    <div class="price">
+                                        <span class="price-head">From</span>
+                                        <span class="price-value">$180</span>
+                                        <span class="price-tail">/ night</span>
+                                    </div>
+                                    <div class="room-ribbon">
+                                        20% off
+                                    </div>
+                                </figure>
+                                <div class="content">
+                                    <h3 class="room-title">
+                                        <a href="./room-details.html">
+                                            Premium Room
+                                        </a>
+                                    </h3>
+                                    <div class="infor-wrap">
+                                        <div class="infor-item">
+                                            <i class="fa-solid fa-bed"></i>
+                                            <span>
+                                                2 Single Beds
+                                            </span>
+                                        </div>
+                                        <div class="infor-item">
+                                            <i class="fa-solid fa-users"></i>
+                                            <span>
+                                                6 guests
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="./room-details.html" class="book-now">
+                                        book now <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="container">
+                    <div class="review-head">
+                        <div class="review-head__infor">
+                            <div class="room-rating">
+                                <span class="review-rating-text">
+                                    1 Review
+                                </span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="review-filter">
+                                <div class="review-sort-by">
+                                    <span class="span-head">Sort By:</span>
+                                    <span class="sort-by-field">
+                                        Rating <i class="fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="sort-by-field">
+                                        Date <i class="fa-solid fa-caret-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-content__item">
+                            <div class="review-user">
+                                <div class="review-avatar">
+                                    <img src="./images/avatar.png" alt="">
+                                </div>
+                                <h4 class="review-name">
+                                    John Doe
+                                </h4>
+                            </div>
+                            <div class="review-detail">
+                                <div class="detail-desc">
+                                    <p>
+                                        The hotel is great, clean and worthy. Staffs are also good and welcome. I will go there again!
+                                    </p>
+                                </div>
+                                <div class="detail-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="detail-date">
+                                    Apr 15, 2022
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/logo-resort.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="social">
+                                <span>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>Tel:</span>
+                                    <a href="tel:(024) 2242 0777">(024) 2242 0777</a>
+                                </p>
+                                <p>
+                                    <span>email:</span>
+                                    <a href="mailto:infor@webhotel.vn">infor@webhotel.vn</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>hotel address</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>
+                                        <a href="">
+                                            4th floor, 147 Mai Dich Street, Cau Giay District, Hanoi
+                                        </a>
+                                    </span>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/footer-banner.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="contact-card">
+                                <figure class="image">
+                                    <img src="./images/footer-cards-300x53.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="" id="backtotop"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./lib/js/style.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

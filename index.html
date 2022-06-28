@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotale</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="header-top__item header-top__left">
+                            <a href="tel:(024) 2242 0777"><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a>
+                            <a href="mailto:infor@webhotel.com"><i class="fa-solid fa-envelope"></i> infor@webhotel.com</a>
+                        </div>
+                        <div class="header-top__item header-top__right">
+                            <span class="user-login">
+                                login
+                            </span>
+                            <span class="user-signup">
+                                sign up
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header-content">
+                        <a href="./index.html" class="logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="menu-link">home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        pages<i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="./about.html" class="submenu-item__link">
+                                                about us
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="./gallery.html" class="submenu-item__link">
+                                                gallery
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./rooms.html" class="menu-link">rooms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./reservation.html" class="menu-link">reservation</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./blogs.html" class="menu-link">blogs</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./contact.html" class="menu-link">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="link-asset">
+                            <a href="" class="btn book-link">
+                                book now
+                            </a>
+                            <div id="header">
+                                <a href="#menu" id="menu-toggle" class="">
+                                    <span>
+                                        <!-- <i class="fa-solid fa-bars"></i> -->
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner banner-home">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-title">
+                            <h1 class="add-font">
+                                Book Your Vacation
+                            </h1>
+                            <span class="text">
+                                Explore new experience with Hotale
+                            </span>
+                        </div>
+                        <div class="form-search__room">
+                            <form action="" class="search-room">
+                                <div class="form-group checkin-form">
+                                    <label for="">check in</label>
+                                    <div class="value-space">
+                                        <input type="text" id="date1" class="form-control" value="22-12-2022">
+                                    </div>
+                                </div>
+                                <div class="form-group checkout-form">
+                                    <label for="">check out</label>
+                                    <div class="value-space">
+                                        <input type="text" id="date2" class="form-control" value="22-12-2022">
+                                    </div>
+                                </div>
+                                <div class="form-group room-form">
+                                    <div class="div">
+                                        <label for="">room</label>
+                                        <div class="value-space">
+                                            <span class="amount">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-selection__wrap">
+                                        <div class="custom-selection__wrap_item" id="custom-room">
+                                            <div class="selection-head">Room</div>
+                                            <div class="selection-tail">
+                                                <span class="minus" id="minus">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </span>
+                                                <span class="amount" id="amount">1</span>
+                                                <span class="plus" id="plus">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group guests-form">
+                                    <div class="div">
+                                        <label for="">guests</label>
+                                        <div class="value-space">
+                                            <span>
+                                                Adults
+                                                 <span class="amount2">1</span>
+                                            </span>
+                                            <span>
+                                                Children 
+                                                 <span class="amount3">0</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-selection__wrap">
+                                        <div class="custom-selection__wrap_item" id="custom-adult">
+                                            <div class="selection-head">Adults</div>
+                                            <div class="selection-tail">
+                                                <span class="minus2">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </span>
+                                                <span class="amount2">1</span>
+                                                <span class="plus2">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="custom-selection__wrap_item" id="custom-children">
+                                            <div class="selection-head">Children</div>
+                                            <div class="selection-tail">
+                                                <span class="minus3">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </span>
+                                                <span class="amount3">0</span>
+                                                <span class="plus3">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group btn-form">
+                                    <button type="submit" class="btn-search1">
+                                        search rooms
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="about pt-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 desc">
+                            <div class="desc-content">
+                                <div class="desc-content__header">
+                                    <p>
+                                        <span class="desc-number">
+                                            5
+                                        </span>
+                                        <span class="desc-name">
+                                            stars
+                                        </span>
+                                        <span class="desc-number">
+                                            25
+                                        </span>
+                                        <span class="desc-name">
+                                            rooms
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="desc-content__text">
+                                    <p>
+                                        Our hotel is located in the heart of the New Forrest. A five stars lifestyle surrounded by the forest.
+                                    </p>
+                                </div>
+                                <div class="desc-content__link">
+                                    <a href="./about.html" class="link-detail">
+                                        more about us <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 thumd">
+                            <div class="thumd-inner">
+                                <figure class="image">
+                                    <img src="./images/resort-swim.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-12 list-thumd">
+                            <div class="list-thumd__inner">
+                                <figure class="image">
+                                    <img src="./images/resort-group.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rooms pt-100">
+                <div class="bg"></div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            owl rooms
+                        </h2>
+                        <div class="sectitle">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of soul.
+                        </div>
+                    </div>
+                    <div class="rooms-slider owl-carousel owl-theme">
+                        <div class="rooms-item">
+                            <div class="inner">
+                                <figure class="image">
+                                    <a href="./room-details.html">
+                                        <img src="./images/room1.jpg" alt="">
+                                    </a>
+                                    <div class="price">
+                                        <span class="price-head">From</span>
+                                        <span class="price-value">$180</span>
+                                        <span class="price-tail">/ night</span>
+                                    </div>
+                                    <div class="room-ribbon">
+                                        20% off
+                                    </div>
+                                </figure>
+                                <div class="content">
+                                    <h3 class="room-title">
+                                        <a href="./room-details.html">
+                                            Premium Room
+                                        </a>
+                                    </h3>
+                                    <div class="infor-wrap">
+                                        <div class="infor-item">
+                                            <i class="fa-solid fa-bed"></i>
+                                            <span>
+                                                2 Single Beds
+                                            </span>
+                                        </div>
+                                        <div class="infor-item">
+                                            <i class="fa-solid fa-users"></i>
+                                            <span>
+                                                6 guests
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="./room-details.html" class="book-now">
+                                        book now <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-rooms">
+                        <a href="./rooms.html">view all rooms <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="facilities pd-100">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            hotel facilities
+                        </h2>
+                        <div class="sectitle">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        </div>
+                    </div>
+                    <div class="list-facilities">
+                        <div class="row">
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-car"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-water-ladder"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-spa"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-wifi"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-cake-candles"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 facilities-item">
+                                <div class="inner">
+                                    <div class="item-icon">
+                                        <i class="fa-solid fa-laptop-file"></i>
+                                    </div>
+                                    <div class="item-title">
+                                        <h3>
+                                            parking
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="bg-video"></div>
+                <div class="play">
+                    <a href="https://www.youtube.com/watch?v=US7bGTUkBfg" data-fancybox="">
+                        <img src="./images/play.png" alt="" title="Play">
+                    </a>
+                </div>
+            </section>
+
+            <section class="service pd-100">
+                <div class="bg-service"></div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            Visit Our Famous Facilities
+                        </h2>
+                        <div class="sectitle">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        </div>
+                    </div>
+                    <div class="service-wrap">
+                        <div class="service-wrap__item">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <figure class="image">
+                                        <img src="./images/chef-cook.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="desc">
+                                        <h3 class="service-title">
+                                            3 Michelin Stars Restaurant, Vézère
+                                        </h3>
+                                        <p>
+                                            A brasserie inspired by French cuisine, a fresh and modern place to visit and enjoy dishes always handmade of the best ingredients of the season.
+                                        </p>
+                                        <a href="#" class="link-detail">
+                                            learn more <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-wrap__item">
+                            <div class="row">
+                                <div class="col-lg-7 column-image">
+                                    <figure class="image">
+                                        <img src="./images/bar.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-lg-5 column-desc">
+                                    <div class="desc">
+                                        <h3 class="service-title">
+                                            The Penthouse Bar, An iconic american bar
+                                        </h3>
+                                        <p>
+                                            The cozy bar area accompanying the Penthouse is a classic cocktail bar at it’s finest. Our experienced bartenders are here to offer you both the classic bewerages and the newest global trends.
+                                        </p>
+                                        <a href="#" class="link-detail">
+                                            learn more <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-wrap__item">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <figure class="image">
+                                        <img src="./images/spa.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="desc">
+                                        <h3 class="service-title">
+                                            The Spa. Refresh Yourself
+                                        </h3>
+                                        <p>
+                                            Whether you are in search of a well-appointed gym or a pampering moment on the massage table and inside the warm saunas, you can always find a place for yourself at our spa.
+                                        </p>
+                                        <a href="#" class="link-detail">
+                                            learn more <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonial pd-100">
+                <div class="bg-testi"></div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            testimonial
+                        </h2>
+                        <div class="sectitle">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        </div>
+                    </div>
+                    <div class="testi-slide owl-carousel owl-theme">
+                        <div class="testi-item">
+                            <div class="inner">
+                                <div class="author">
+                                    <img src="./images/insta1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="img-quote">
+                                        “
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.
+                                        </p>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <div class="author-name">
+                                            Joan Smith
+                                        </div>
+                                        <div class="author-infor">
+                                            Solo Traveler
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="inner">
+                                <div class="author">
+                                    <img src="./images/insta1.jpg" alt="">
+                                    <div class="img-quote">
+                                        “
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="img-quote">
+                                        “
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.
+                                        </p>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <div class="author-name">
+                                            Joan Smith
+                                        </div>
+                                        <div class="author-infor">
+                                            Solo Traveler
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="inner">
+                                <div class="author">
+                                    <img src="./images/insta1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="img-quote">
+                                        “
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.
+                                        </p>
+                                    </div>
+                                    <div class="author-wrap">
+                                        <div class="author-name">
+                                            Joan Smith
+                                        </div>
+                                        <div class="author-infor">
+                                            Solo Traveler
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blogs">
+                <div class="bg"></div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            news & offer
+                        </h2>
+                        <div class="sectitle">
+                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        </div>
+                    </div>
+                    <div class="blogs-desc">
+                        <div class="blog-slide owl-carousel owl-theme">
+                            <div class="blog-item">
+                                <div class="inner">
+                                    <div class="thumd">
+                                        <img src="./images/blog1.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="blog-title">
+                                            <a href="./blog-details.html">
+                                                Tips For Picking Vacation Accommodation
+                                            </a>
+                                        </h3>
+                                        <div class="blog-infor">
+                                            <span>
+                                                <i class="fa-regular fa-clock"></i>
+                                                dec 17,2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="inner">
+                                    <div class="thumd">
+                                        <img src="./images/pexels-photo-871053-700x990.jpeg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="blog-title">
+                                            <a href="./blog-details.html">
+                                                Tips For Picking Vacation Accommodation
+                                            </a>
+                                        </h3>
+                                        <div class="blog-infor">
+                                            <span>
+                                                <i class="fa-regular fa-clock"></i>
+                                                dec 17,2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="inner">
+                                    <div class="thumd">
+                                        <img src="./images/shop-slo-vhztm9QC0L0-unsplash-700x990.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="blog-title">
+                                            <a href="./blog-details.html">
+                                                Tips For Picking Vacation Accommodation
+                                            </a>
+                                        </h3>
+                                        <div class="blog-infor">
+                                            <span>
+                                                <i class="fa-regular fa-clock"></i>
+                                                dec 17,2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item">
+                                <div class="inner">
+                                    <div class="thumd">
+                                        <img src="./images/shutterstock_307470824-700x990.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="blog-title">
+                                            <a href="./blog-details.html">
+                                                Tips For Picking Vacation Accommodation
+                                            </a>
+                                        </h3>
+                                        <div class="blog-infor">
+                                            <span>
+                                                <i class="fa-regular fa-clock"></i>
+                                                dec 17,2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-blog">
+                        <a href="./blogs.html" class="link-detail">
+                            read the blog <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="bg"></div>
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="subtitle add-font">
+                            newsletter
+                        </h2>
+                        <div class="sectitle">
+                            Subscribe the newsletter to get updated to news and promotions
+                        </div>
+                    </div>
+                    <div class="newsletter-subscribe">
+                        <form action="" class="subscribe-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="your email address" class="form-control">
+                            </div>
+                            <div class="form-btn">
+                                <button type="submit" class="btn-submid">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="insta-gallery">
+                <div class="container">
+                    <div class="list-insta-gallery owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="" data-fancybox="gallery">
+                                <img src="./images/insta6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-insta">
+                        <a href="" class="contact-insta__link">
+                            <i class="fa-brands fa-instagram"></i> follow us on instagram
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/logo-resort.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="social">
+                                <span>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>Tel:</span>
+                                    <a href="tel:(024) 2242 0777">(024) 2242 0777</a>
+                                </p>
+                                <p>
+                                    <span>email:</span>
+                                    <a href="mailto:infor@webhotel.vn">infor@webhotel.vn</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>hotel address</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>
+                                        <a href="">
+                                            4th floor, 147 Mai Dich Street, Cau Giay District, Hanoi
+                                        </a>
+                                    </span>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/footer-banner.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="contact-card">
+                                <figure class="image">
+                                    <img src="./images/footer-cards-300x53.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="" id="backtotop"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./lib/js/style.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

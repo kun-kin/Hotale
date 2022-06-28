@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotale</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="header-top__item header-top__left">
+                            <a href="tel:(024) 2242 0777"><i class="fa-solid fa-phone"></i> +(024) 2242 0777</a>
+                            <a href="mailto:infor@webhotel.com"><i class="fa-solid fa-envelope"></i> infor@webhotel.com</a>
+                        </div>
+                        <div class="header-top__item header-top__right">
+                            <span class="user-login">
+                                login
+                            </span>
+                            <span class="user-signup">
+                                sign up
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header-content">
+                        <a href="./index.html" class="logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="menu-link">home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        pages<i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="./about.html" class="submenu-item__link">
+                                                about us
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="./gallery.html" class="submenu-item__link">
+                                                gallery
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./rooms.html" class="menu-link">rooms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./reservation.html" class="menu-link">reservation</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./blogs.html" class="menu-link">blogs</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./contact.html" class="menu-link">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="link-asset">
+                            <a href="" class="btn book-link">
+                                book now
+                            </a>
+                            <div id="header">
+                                <a href="#menu" id="menu-toggle" class="">
+                                    <span>
+                                        <!-- <i class="fa-solid fa-bars"></i> -->
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-title">
+                            <h1 class="banner-title">
+                                room search
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="hotale-wrap">
+                <div class="container">
+                    <div class="page-content">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="search-item__wrap">
+                                    <h3 class="head">Check Availability</h3>
+                                    <form action="" class="form-search__wrap">
+                                        <div class="search-room">
+                                            <div class="form-group checkin-form">
+                                                <label for="">check in</label>
+                                                <div class="value-space">
+                                                    <input type="text" id="date1" class="form-control" value="22-12-2022">
+                                                </div>
+                                            </div>
+                                            <div class="form-group checkout-form">
+                                                <label for="">check out</label>
+                                                <div class="value-space">
+                                                    <input type="text" id="date2" class="form-control" value="22-12-2022">
+                                                </div>
+                                            </div>
+                                            <div class="form-group room-form">
+                                                <div class="div">
+                                                    <label for="">room</label>
+                                                    <div class="value-space">
+                                                        <span class="amount">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-selection__wrap">
+                                                    <div class="custom-selection__wrap_item" id="custom-room">
+                                                        <div class="selection-head">Room</div>
+                                                        <div class="selection-tail">
+                                                            <span class="minus">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </span>
+                                                            <span class="amount">1</span>
+                                                            <span class="plus">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group guests-form">
+                                                <div class="div">
+                                                    <label for="">guests</label>
+                                                    <div class="value-space">
+                                                        <span>Adults 2</span>
+                                                        <span>Children 0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-selection__wrap">
+                                                    <div class="custom-selection__wrap_item" id="custom-adult">
+                                                        <div class="selection-head">Adults</div>
+                                                        <div class="selection-tail">
+                                                            <span class="minus">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </span>
+                                                            <span class="amount">1</span>
+                                                            <span class="plus">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-selection__wrap_item" id="custom-children">
+                                                        <div class="selection-head">Children</div>
+                                                        <div class="selection-tail">
+                                                            <span class="minus">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </span>
+                                                            <span class="amount">0</span>
+                                                            <span class="plus">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="search-tax">
+                                            <div class="search-tax__item">
+                                                <h4 class="label">
+                                                    room size
+                                                    <span class="close-filter">
+                                                    </span>
+                                                </h4>
+                                                <div class="filter">
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-room-size" id="" value="30-40-sqp">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> 30-40 sqm
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-room-size" id="" value="40-55-sqp">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> 40-55 sqm
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-room-size" id="" value="55-80-sqp">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> 55-80 sqm
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-room-size" id="" value="80-sqp">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> 80+ sqm
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search-tax__item">
+                                                <h4 class="label">
+                                                    Facilities
+                                                    <span class="close-filter">
+                                                    </span>
+                                                </h4>
+                                                <div class="filter">
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-facilities" id="" value="air-conditioner">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> Air-conditioner
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-facilities" id="" value="bath-tub">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> bath tub
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-facilities" id="" value="heater">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> heater
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-facilities" id="" value="iron">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> iron
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <input type="checkbox" name="tax-facilities" id="" value="safety-box">
+                                                        <span class="checkbox-input">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> safety box
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <button type="submit" class="btn-search1">
+                                                search rooms
+                                            </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="search-content__wrap">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div class="thumd">
+                                                <a href="./room-details.html">
+                                                    <img src="./images/room1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h3 class="room-title">
+                                                    <a href="./room-details.html">
+                                                        Luxury Suite
+                                                    </a>
+                                                </h3>
+                                                <div class="infor-wrap">
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                        <span class="infor-tail">
+                                                            1 king bed
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        <span class="infor-tail">
+                                                            3 guests
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <span class="infor-tail">
+                                                            30 sqm
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="room-content">
+                                                    Hotale Suites has been honored with the prestigious Five-Star Award by Forbes.
+                                                </div>
+                                                <div class="room-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span class="room-rating-text">
+                                                        1 review
+                                                    </span>
+                                                </div>
+                                                <div class="room-bot">
+                                                    <a href="./room-details.html" class="link-detail">book now <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <div class="price">
+                                                        <span class="price-head">Form</span>
+                                                        <span class="price-value">
+                                                            $90
+                                                        </span>
+                                                        <span class="price-tail">
+                                                            / night
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div class="thumd">
+                                                <a href="./room-details.html">
+                                                    <img src="./images/room2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h3 class="room-title">
+                                                    <a href="./room-details.html">
+                                                        Standard Deluxe
+                                                    </a>
+                                                </h3>
+                                                <div class="infor-wrap">
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                        <span class="infor-tail">
+                                                            1 king bed
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        <span class="infor-tail">
+                                                            3 guests
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <span class="infor-tail">
+                                                            30 sqm
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="room-content">
+                                                    Hotale Suites has been honored with the prestigious Five-Star Award by Forbes.
+                                                </div>
+                                                <div class="room-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span class="room-rating-text">
+                                                        1 review
+                                                    </span>
+                                                </div>
+                                                <div class="room-bot">
+                                                    <a href="./room-details.html" class="link-detail">book now <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <div class="price">
+                                                        <span class="price-head">Form</span>
+                                                        <span class="price-value">
+                                                            $90
+                                                        </span>
+                                                        <span class="price-tail">
+                                                            / night
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div class="thumd">
+                                                <a href="./room-details.html">
+                                                    <img src="./images/room3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h3 class="room-title">
+                                                    <a href="./room-details.html">
+                                                        The Penthouse
+                                                    </a>
+                                                </h3>
+                                                <div class="infor-wrap">
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                        <span class="infor-tail">
+                                                            1 king bed
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        <span class="infor-tail">
+                                                            3 guests
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <span class="infor-tail">
+                                                            30 sqm
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="room-content">
+                                                    Hotale Suites has been honored with the prestigious Five-Star Award by Forbes.
+                                                </div>
+                                                <div class="room-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span class="room-rating-text">
+                                                        1 review
+                                                    </span>
+                                                </div>
+                                                <div class="room-bot">
+                                                    <a href="./room-details.html" class="link-detail">book now <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <div class="price">
+                                                        <span class="price-head">Form</span>
+                                                        <span class="price-value">
+                                                            $90
+                                                        </span>
+                                                        <span class="price-tail">
+                                                            / night
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <div class="thumd">
+                                                <a href="./room-details.html">
+                                                    <img src="./images/room1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="desc">
+                                                <h3 class="room-title">
+                                                    <a href="./room-details.html">
+                                                        Luxury Suite
+                                                    </a>
+                                                </h3>
+                                                <div class="infor-wrap">
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-bed"></i>
+                                                        <span class="infor-tail">
+                                                            1 king bed
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        <span class="infor-tail">
+                                                            3 guests
+                                                        </span>
+                                                    </div>
+                                                    <div class="infor-wrap__item">
+                                                        <i class="fa-solid fa-expand"></i>
+                                                        <span class="infor-tail">
+                                                            30 sqm
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="room-content">
+                                                    Hotale Suites has been honored with the prestigious Five-Star Award by Forbes.
+                                                </div>
+                                                <div class="room-rating">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <span class="room-rating-text">
+                                                        1 review
+                                                    </span>
+                                                </div>
+                                                <div class="room-bot">
+                                                    <a href="./room-details.html" class="link-detail">book now <i class="fa-solid fa-chevron-right"></i></a>
+                                                    <div class="price">
+                                                        <span class="price-head">Form</span>
+                                                        <span class="price-value">
+                                                            $90
+                                                        </span>
+                                                        <span class="price-tail">
+                                                            / night
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/logo-resort.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="social">
+                                <span>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>Contact</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>Tel:</span>
+                                    <a href="tel:(024) 2242 0777">(024) 2242 0777</a>
+                                </p>
+                                <p>
+                                    <span>email:</span>
+                                    <a href="mailto:infor@webhotel.vn">infor@webhotel.vn</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <h4>hotel address</h4>
+                            </div>
+                            <div class="contact-infor">
+                                <p>
+                                    <span>
+                                        <a href="">
+                                            4th floor, 147 Mai Dich Street, Cau Giay District, Hanoi
+                                        </a>
+                                    </span>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer-column">
+                            <div class="footer-title">
+                                <figure class="image">
+                                    <img src="./images/footer-banner.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="contact-card">
+                                <figure class="image">
+                                    <img src="./images/footer-cards-300x53.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="" id="backtotop"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./lib/js/style.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
